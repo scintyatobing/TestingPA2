@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.2.2 (Python 3.8.0 on win32)" generated="20220614 12:27:55.382" rpa="false">
+<suite id="s1" name="TestingPA2 Robot" source="D:\ToolsQA\TestingPA2_Robot">
+<suite id="s1-s1" name="TestSuite" source="D:\ToolsQA\TestingPA2_Robot\TestSuite">
+<suite id="s1-s1-s1" name="TestCase MenambahPeminjaman" source="D:\ToolsQA\TestingPA2_Robot\TestSuite\TestCase_MenambahPeminjaman.robot">
+<test id="s1-s1-s1-t1" name="TestCaseOne_TambahPeminjamanBuku">
+<kw name="Log" library="BuiltIn">
+<doc>Logs the given message with the given level.</doc>
+<arguments>
+<arg>Test adding peminjaman buku</arg>
+</arguments>
+<msg timestamp="20220614 12:27:55.796" level="INFO">Test adding peminjaman buku</msg>
+<status status="PASS" starttime="20220614 12:27:55.796" endtime="20220614 12:27:55.797"></status>
+</kw>
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<arguments>
+<arg>https://perpustakaan.rickaru.com/office/auth</arg>
+<arg>chrome</arg>
+</arguments>
+<msg timestamp="20220614 12:27:55.797" level="INFO">Opening browser 'chrome' to base url 'https://perpustakaan.rickaru.com/office/auth'.</msg>
+<status status="PASS" starttime="20220614 12:27:55.797" endtime="20220614 12:27:58.567"></status>
+</kw>
+<kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
+<doc>Sets the implicit wait value used by Selenium.</doc>
+<arguments>
+<arg>5</arg>
+</arguments>
+<status status="PASS" starttime="20220614 12:27:58.568" endtime="20220614 12:27:58.572"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>email</arg>
+<arg>admin@gmail.com</arg>
+</arguments>
+<msg timestamp="20220614 12:27:58.575" level="INFO">Typing text 'admin@gmail.com' into text field 'email'.</msg>
+<status status="PASS" starttime="20220614 12:27:58.573" endtime="20220614 12:27:58.783"></status>
+</kw>
+<kw name="Input Password" library="SeleniumLibrary">
+<doc>Types the given password into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>password</arg>
+<arg>password</arg>
+</arguments>
+<msg timestamp="20220614 12:27:58.785" level="INFO">Typing password into text field 'password'.</msg>
+<msg timestamp="20220614 12:27:58.863" level="INFO">Temporally setting log level to: NONE</msg>
+<msg timestamp="20220614 12:27:58.949" level="INFO">Log level changed from NONE to INFO.</msg>
+<status status="PASS" starttime="20220614 12:27:58.784" endtime="20220614 12:27:58.950"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="tombol_login"]</arg>
+</arguments>
+<msg timestamp="20220614 12:27:58.951" level="INFO">Clicking button '//*[@id="tombol_login"]'.</msg>
+<status status="PASS" starttime="20220614 12:27:58.950" endtime="20220614 12:27:59.077"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20220614 12:28:02.088" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220614 12:27:59.078" endtime="20220614 12:28:02.088"></status>
+</kw>
+<kw name="Click Button" library="SeleniumLibrary">
+<doc>Clicks the button identified by ``locator``.</doc>
+<arguments>
+<arg>xpath:/html/body/div[2]/div/div[6]/button[1]</arg>
+</arguments>
+<msg timestamp="20220614 12:28:02.092" level="INFO">Clicking button 'xpath:/html/body/div[2]/div/div[6]/button[1]'.</msg>
+<status status="PASS" starttime="20220614 12:28:02.090" endtime="20220614 12:28:04.852"></status>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<doc>Pauses the test executed for the given time.</doc>
+<arguments>
+<arg>3</arg>
+</arguments>
+<msg timestamp="20220614 12:28:07.870" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20220614 12:28:04.853" endtime="20220614 12:28:07.870"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="accordionSidebar"]/li[4]/a</arg>
+</arguments>
+<msg timestamp="20220614 12:28:07.872" level="INFO">Clicking element '//*[@id="accordionSidebar"]/li[4]/a'.</msg>
+<status status="PASS" starttime="20220614 12:28:07.871" endtime="20220614 12:28:09.179"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="content_list"]/div/div/div[2]/a[1]/span[2]</arg>
+</arguments>
+<msg timestamp="20220614 12:28:09.181" level="INFO">Clicking element '//*[@id="content_list"]/div/div/div[2]/a[1]/span[2]'.</msg>
+<status status="PASS" starttime="20220614 12:28:09.180" endtime="20220614 12:28:09.311"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="select2-books-container"]</arg>
+</arguments>
+<msg timestamp="20220614 12:28:09.312" level="INFO">Clicking element '//*[@id="select2-books-container"]'.</msg>
+<status status="PASS" starttime="20220614 12:28:09.312" endtime="20220614 12:28:11.819"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="page-top"]/span/span/span[1]/input</arg>
+<arg>Penyihir Oz</arg>
+</arguments>
+<msg timestamp="20220614 12:28:11.824" level="INFO">Typing text 'Penyihir Oz' into text field '//*[@id="page-top"]/span/span/span[1]/input'.</msg>
+<status status="PASS" starttime="20220614 12:28:11.820" endtime="20220614 12:28:11.979"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click the element identified by ``locator``.</doc>
+<arguments>
+<arg>//*[@id="select2-books-result-xzl8-1"]</arg>
+</arguments>
+<msg timestamp="20220614 12:28:11.981" level="INFO">Clicking element '//*[@id="select2-books-result-xzl8-1"]'.</msg>
+<msg timestamp="20220614 12:28:17.141" level="INFO" html="yes">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-31.png"&gt;&lt;img src="selenium-screenshot-31.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220614 12:28:17.147" level="FAIL">Element with locator '//*[@id="select2-books-result-xzl8-1"]' not found.</msg>
+<status status="FAIL" starttime="20220614 12:28:11.980" endtime="20220614 12:28:17.147"></status>
+</kw>
+<status status="FAIL" starttime="20220614 12:27:55.795" endtime="20220614 12:28:17.149" critical="yes">Element with locator '//*[@id="select2-books-result-xzl8-1"]' not found.</status>
+</test>
+<status status="FAIL" starttime="20220614 12:27:55.494" endtime="20220614 12:28:17.152"></status>
+</suite>
+<status status="FAIL" starttime="20220614 12:27:55.490" endtime="20220614 12:28:17.161"></status>
+</suite>
+<status status="FAIL" starttime="20220614 12:27:55.455" endtime="20220614 12:28:17.166"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1">Critical Tests</stat>
+<stat pass="0" fail="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="0" fail="1" id="s1" name="TestingPA2 Robot">TestingPA2 Robot</stat>
+<stat pass="0" fail="1" id="s1-s1" name="TestSuite">TestingPA2 Robot.TestSuite</stat>
+<stat pass="0" fail="1" id="s1-s1-s1" name="TestCase MenambahPeminjaman">TestingPA2 Robot.TestSuite.TestCase MenambahPeminjaman</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
